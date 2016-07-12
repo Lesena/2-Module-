@@ -1,0 +1,158 @@
+/*Устанавливаю базовый размер шрифта а потом уже по наследованию каждому отдельно*/
+html { font-size: 14px; 
+      box-sizing: border-box;
+}
+@font-face {
+    font-family: Scriptorama; /* имя шрифта для CSS правил */
+    src: local("Scriptorama"), /* проверяем наличие шрифта в ОС пользователя */
+         url(path-to/Scriptorama.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+  }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+	background-color: #DCDCDC;
+	-moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+}
+header{
+   overflow: auto; /* clearfix */
+}
+article{
+ border-bottom: 2px solid black; /* Параметры линии внизу */
+padding-bottom: 20px; /*нижний внутренний отступ*/
+}
+
+div {
+    margin: 0 20px;
+    /*width: calc(33% - 40px);*/
+}
+.wrapper{
+    background-color: #FFFFFF;
+    width: 55%;
+	height: 80%;
+	margin:0 auto;
+	max-width: 90%; /* контейнер не превышает 90% ширины экрана */
+    min-width: 50%;
+    margin:0 auto;
+	padding: 10px 15px 22px 18px;
+	margin-bottom: 50px; /* Отступ снизу */
+	margin-top: 50px; /* Отступ снизу */
+	 -webkit-box-shadow: 0 0 30px #969696;
+    -moz-box-shadow: 0 0 30px #969696;
+    box-shadow: 0 0 30px #969696;
+
+}
+#nadpis {
+    
+     word-wrap: none;/*Чтобы избежать возможного переноса строк между вспомогательным элементом и содержимым*/
+     padding: 10px; /* Поля вокруг текста */
+      position: relative; 
+	 
+	top: 0px; 
+	width: 100%; 
+	float: left;
+    height: 300px;	
+	left: 0; 
+	right: 0;
+	 border-bottom: 2px solid black; /* Параметры линии внизу */
+padding-bottom: 20px; /*нижний внутренний отступ*/
+	}
+	
+.photo{
+   width:200px;
+   height:250px;
+   border:solid gray;
+   border-width:3px 0;
+display: block; margin: 0 auto;
+   
+}
+
+h1 {
+    font:2em/1 Arial,sans-serif;
+	font-weight: bold;*
+}
+h2 {
+    font-size: 1.5em;
+    
+	
+}
+p { font-size: 1.4em;
+   /* font-style: italic;
+	font-weight: bold;*/
+	
+    text-indent: 30px;/*Свойство text-indent позволяет выделить параграф с помощью установки отступа для его первой строки. В примере 30px применяется ко всем параграфам*/
+ }
+ 
+.sometext{
+  padding: 10px; /* Поля вокруг текста */
+  width: 80%; /* Ширина слоя в пикселах */
+  margin-left: 10%; /* Отступ слева */
+  margin-right: 15%; /* Отступ справа */
+  
+  
+}
+.somebox{
+ border-top: 2px solid black; /* Параметры линии внизу */
+ padding-left:65px;
+ padding-top:10px;
+}
+li{
+      font-size: 1.4em;
+   /* font-style: italic;
+	font-weight: bold;*/
+	font-family: arial, sans-serif;
+    text-indent: 30px;/*Свойство text-indent позволяет выделить параграф с помощью установки отступа для его первой строки. В примере 30px применяется ко всем параграфам*/
+ }
+
+
+.box3{
+  
+  
+  border-bottom: 2px solid black; /* Параметры линии внизу */
+padding-bottom: 20px; /*нижний внутренний отступ*/
+padding-left:65px;
+ padding-top:10px;
+}
+.letter { 
+     text-align:left;
+     color: black; /* Красный цвет символов */ 
+     font-size: 200%; /* Размер шрифта в процентах */ 
+     font-family: serif; /* Шрифт с засечками */ 
+    }
+#tel{
+	   margin-left: 30px; /* Отступ слева */  
+	}
+#vk{
+     margin-left: 30px; /* Отступ слева */  
+	 padding: 10px;
+}
+#fb{
+    margin-left: 80px; /* Отступ слева */  
+	 padding: 20px;
+}
+ A {
+    text-decoration: none; /* Убирает подчеркивание для ссылок */
+   } 
+   A:hover { 
+    text-decoration: underline; /* Добавляем подчеркивание при наведении курсора на ссылку */
+    color: #0000FF; /* Ссылка красного цвета */
+   } 
+  .box4{
+ 
+
+ padding-top:10px;
+}
+.justify:after {
+    display: inline-block;
+    width: 100%;
+    content: "";
+	left: 0; 
+	right: 0;
+}
+#naviki{
+        padding-left:65px;
+}
